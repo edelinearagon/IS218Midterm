@@ -9,7 +9,6 @@
 use buildtable;
 use csvtoarray;
 use printcsvarrray;
-use readcsv;
 
 class getCSV
 {
