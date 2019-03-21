@@ -6,6 +6,10 @@
  * Time: 04:57
  */
 
+use buildtable;
+use printcsvarrray;
+use readcsv;
+
 public static function CSVtoArray(String $rfile)
 {
     while (!feof($rfile)) {
