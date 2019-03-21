@@ -10,13 +10,16 @@ use buildtable;
 use printcsvarrray;
 use readcsv;
 
-public static function CSVtoArray(String $rfile)
+class csvtoarray 
 {
-    while (!feof($rfile)) {
-        $wordsTab[] = fgetcsv($rfile, 1000);
+    public static function CSVtoArray(String $rfile)
+    {
+        while (!feof($rfile)) {
+            $wordsTab[] = fgetcsv($rfile, 1000);
+        }
+        fclose($rfile);
+        return $wordsTab;
     }
-    fclose($rfile);
-    return $wordsTab;
-}
+}    
 
 ?>
