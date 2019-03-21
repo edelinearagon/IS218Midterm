@@ -5,6 +5,11 @@
  * Date: 2019-03-21
  * Time: 04:58
  */
+
+use csvtoarray;
+use printcsvarrray;
+use readcsv;
+
 public static function buildTable(Array $wordstab)
 {
     $row = 1;
