@@ -6,6 +6,10 @@
  * Time: 04:58
  */
 
+use buildtable;
+use csvtoarray;
+use readcsv; 
+
 public static function printCSVarray(Array $wordstab)
 {
     $arraycsv =echo($wordstab);
