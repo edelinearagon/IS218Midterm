@@ -6,17 +6,11 @@
  * Time: 04:58
  */
 
-use buildtable;
-use csvtoarray;
-use readcsv; 
-
-class printcsvarray
-{    
-    public static function printCSVarray(Array $wordstab)
-    {
-        $arraycsv =echo($wordstab);
-            return Sarraycsv;
-    }
+function printCSVarray($wordstab)
+{
+    $arraycsv = print($wordstab);
+    return $arraycsv;
 }
 
-?>
+include 'csvtoarray.php';
+echo printCSVarray();
