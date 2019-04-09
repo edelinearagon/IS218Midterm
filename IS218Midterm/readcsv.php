@@ -6,18 +6,15 @@
      * Time: 22:55
      */
 
-use buildtable;
-use csvtoarray;
-use printcsvarrray;
-
 class getCSV
 {
-    public static function ReadCSV(String $samplefile)
+    public static function ReadCSV($samplefile)
     {
         $rfile = fopen($samplefile, "r");
         return $rfile;
     }
 
 }
+?>
 ?>
 
