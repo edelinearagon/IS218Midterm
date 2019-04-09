@@ -6,20 +6,16 @@
  * Time: 04:57
  */
 
-use buildtable;
-use printcsvarrray;
-use readcsv;
-
-class csvtoarray 
+function CSVtoArray($rfile)
 {
-    public static function CSVtoArray(String $rfile)
-    {
-        while (!feof($rfile)) {
-            $wordsTab[] = fgetcsv($rfile, 1000);
-        }
-        fclose($rfile);
-        return $wordsTab;
+    while (!feof($rfile)) {
+        $wordsTab[] = fgetcsv($rfile, 1000);
     }
-}    
+    fclose($rfile);
+    return $wordsTab;
+
+}
+    include 'readcsv.php';
+    echo CSVtoArray();
 
 ?>
